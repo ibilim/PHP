@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uebung1-Seite109</title>
+</head>
+<body>
+    <h1>Bitte Füllen Sie das Formular komplett aus</h1>
+
+    <h2> Persönliche Daten</h2>
+    <form action="uebung1-seite-109.php" method="post">
+
+        <p>Vorname :<input type="text" name="vorname"></p>
+        <p>Nachname: <input type="text" name="nachname"></p>
+        <p>Wohnort : <input type="text" name="wohnort"></p>
+
+        <h2>Was wir wissen wollen</h2>
+        <p>Wie wohnen sie? <input type="radio" name="wohntype" value="Einfamilienhaus">Einfamilienhaus 
+            <input type="radio" name="wohntype" value="Eigentumswohnung"> Eigentumswohnung
+            <input type="radio" name="wohntype" value="Mehrfamilienhaus"> Mehrfamilienhaus
+        </p>
+
+        <p>Welche TV-Sendungen sehen Sie gern 
+            <input type="checkbox" name="TV-Sendungen[]" value="Dokumentation">Dokumentation
+            <input type="checkbox" name="TV-Sendungen[]" value="Nachrichten" >Nachrichten
+            <input type="checkbox" name="TV-Sendungen[]" value="Spielfilme" >Spielfilme
+            <input type="checkbox" name="TV-Sendungen[]" value="Sport" >Sport
+        </p>
+
+        <p>Haben Sie noch eine Nachricht für uns?
+            <textarea name="nachricht" cols="30" rows="10"></textarea>
+        </p> 
+        <p><input type="submit" value="Daten speichern" name="submit-form">  <input type="reset" value="Zurück setzen"></p>
+    </form>
+
+</body>
+</html>

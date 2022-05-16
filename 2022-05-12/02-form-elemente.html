@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Elemente</title>
+</head>
+<body>
+    <h1>Formular Elemente</h1>
+
+    <form action="02-form-elemente.php" method="post">
+
+        <p>E-mail*: <input type="email" name="e-mail" > <br>
+        Passwort : <input type="password" name="password"> <br>
+        Datum : <input type="date" name="date" ></p>
+
+        <!--Arrays sind beim checkbox notwendig-->
+        <p> Farben: <br>
+            <input type="checkbox" name="farben[]" value="gelb" >gelb
+            <input type="checkbox" name="farben[]" value="blau" > blau
+            <input type="checkbox" name="farben[]" value="grün"> grün
+            <input type="checkbox" name="farben[]" value="rot"> rot
+        </p>
+
+        <!--Radio Buttons-->
+        <p>Ampel : <br>
+            <input type="radio" name="ampel" value="rot">rot
+            <input type="radio" name="ampel" value="gelb"> gelb
+            <input type="radio" name="ampel" value="grün">grün
+        
+        </p>
+
+        <!--Drop down-->
+        <p>
+            Eis: <select name="eissorte" >
+                <option value="-1">---</option>
+                <option value="Sorte-1">Schoko</option>
+                <option value="Sorte-2">Pistazie</option>
+                <option value="Sorte-3">Caramel mit Salz</option>
+            </select>
+        </p>
+
+        <!--Select Multiple-->
+        <p>
+            Obst: <select name="obst[]" multiple>
+                <option value="apfel">Apfel</option>
+                <option value="birne">Birne</option>
+                <option value="pflaume">Pflaume</option>
+                <option value="orange">Orange</option>
+            </select>
+        </p>
+
+
+        <p>Nachricht <br>
+            <textarea name="memo" cols="20" rows="8" >Das ist vorbelegter Text.
+                
+das ist auf der linken seite. 
+            </textarea>
+
+        </p>
+        <p><input type="submit" value="Absenden"></p>
+
+    </form>
+</body>
+</html>
